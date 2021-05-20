@@ -16,7 +16,7 @@
 # repository branch will inherit these settings.
 [context.production]
   publish = "src"
-  command = "echo $ACCESS_TOKEN && sed -i '"s/PLACEHOLDER/$ACCESS_TOKEN/g"' netlify.toml"
+  command = "echo $ACCESS_TOKEN && sed -i 's/PLACEHOLDER/"$ACCESS_TOKEN"/g' netlify.toml"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
