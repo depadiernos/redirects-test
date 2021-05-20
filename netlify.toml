@@ -67,7 +67,7 @@ redirects = [
 #   force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
-from = "/search"
+from = "/PLACEHOLDER"
 to = "https://google.com"
 status = 200
 force = true
